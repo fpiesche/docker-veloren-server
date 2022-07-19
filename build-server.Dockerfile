@@ -1,4 +1,4 @@
-FROM alpine:3.15.1 AS downloader
+FROM alpine:3.16.1 AS downloader
 
 WORKDIR /veloren
 RUN apk add --no-cache wget unzip \
