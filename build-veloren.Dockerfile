@@ -1,6 +1,6 @@
 # Base container for building the server.
 # Pass --build-arg BUILD_ARGS="--release" to build in Release mode.
-FROM rust:1.59.0-slim-bullseye as builder
+FROM rust:1.62.1-slim-bullseye as builder
 ARG BUILD_ARGS=""
 
 RUN apt update && apt install -y git
